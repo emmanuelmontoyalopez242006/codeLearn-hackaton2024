@@ -11,15 +11,15 @@
 
 <p><img align="right" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
-- 🌱 I’m currently learning Web Development and other programming languages
+- 🌱 Actualmente estoy aprendiendo Desarrollo Web y otros lenguajes de programación
 
-- 📫 How to reach me **adampithewan@gmail.com**
+- 📫 Cómo contactar conmigo **emmanuelfullstack@gmail.com**
 
-- ⚡ Fun fact :- Food and Music🎵 are the reasons to live.
+- ⚡ Dato curioso :- La comida y la música🎵 son las razones para vivir.
 
 <br>
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img
       src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-[Adam-pw](https://github.com/Adam-pw)
+[Adam-pw](https://github.com/emmanuelmontoyalopez242006)
