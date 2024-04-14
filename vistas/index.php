@@ -1,15 +1,20 @@
 <main class="w-full h-screen">
-  <div class="w-full h-full flex flex-col justify-center items-center gap-3 text-dark-text">
+  <?php
+  if (isset($_GET['success'])) {
+    echo '<p id="mensaje" class="bg-green-300 rounded-xl p-4 text-green-600">' . $_GET['success'] . '</p>';
+  }
+  ?>
+  <div class="w-full h-full flex flex-col justify-center items-center gap-3 text-dark-text sm:gap-6">
     <h1 class="text-4xl text-center font-semibold">Tu ruta de aprendizaje <br> como programador comienza aqui</h1>
-    <p class="w-[320px] text-center text-1xl ">Si te interesa todo lo que tiene que ver con el desarrollo web y la programación en general, has llegado al lugar correcto, en codeLearn te enseñamos las bases de la programación y un poco mas... 💻🤩</p>
-    <p>"Expande tu código, expande tu mundo."</p>
+    <p class="w-[320px] text-center text-1xl sm:w-[500px] sm:text-2xl">Si te interesa todo lo que tiene que ver con el desarrollo web y la programación en general, has llegado al lugar correcto, en codeLearn te enseñamos las bases de la programación y un poco mas... 💻🤩</p>
+    <p class="sm:text-xl">"Expande tu código, expande tu mundo."</p>
     <p class="font-semibold text-1xl">- codeLearn 2024</p>
   </div>
 </main>
 
-<section class="w-full h-auto">
+<section class="w-full h-auto sm:pb-24">
   <h2 class="text-dark-text text-center text-4xl mb-11">Nuestra forma de trabajo</h2>
-  <div class="w-full h-full mx-auto flex flex-col justify-evenly items-center gap-10">
+  <div class="w-full h-full mx-auto mb-40 flex flex-col flex-wrap justify-evenly items-center gap-10 sm:flex-row">
     <article class="bg-dark-primary text-dark-text text-center flex flex-col justify-center items-center gap-3">
       <img src="./img/book.svg" alt="Logo de un libro" class="w-[200px]">
       <h2 class="text-2xl font-bold">Aprendizaje</h2>
@@ -28,37 +33,10 @@
   </div>
 </section>
 
-<section class="w-full h-auto">
-  <div class="flex flex-col p-[22px] text-dark-text gap-8">
-    <h2 class="text-2xl mb-6">Algunos de nuestros cursos</h2>
-    <article class="w-full bg-[#ffffff12] rounded-[6px]">
-      <header>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faiosciv.com%2Fwp-content%2Fuploads%2F2020%2F09%2F4197036_v2-01.jpg&f=1&nofb=1&ipt=54f1c5d25caceaa60df92644d548b052eecc3152b3d53dfe4adf7f43739f29dc&ipo=images" alt="fundamentos de programación" class="rounded-tl-[12px] rounded-tr-[12px]">
-      </header>
-      <h3 class="m-[8px] font-bold">Fundamentos de programación</h3>
-      <p class="m-[8px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque aliquid vitae dolorum fuga, ipsa tempore, dicta consectetur quos omnis error impedit totam voluptatum in. Eligendi ipsa ipsum rem nobis!</p>
-    </article>
-    <article class="w-full bg-[#ffffff12] rounded-[6px]">
-      <header>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faiosciv.com%2Fwp-content%2Fuploads%2F2020%2F09%2F4197036_v2-01.jpg&f=1&nofb=1&ipt=54f1c5d25caceaa60df92644d548b052eecc3152b3d53dfe4adf7f43739f29dc&ipo=images" alt="fundamentos de programación" class="rounded-tl-[12px] rounded-tr-[12px]">
-      </header>
-      <h3 class="m-[8px] font-bold">Fundamentos de programación</h3>
-      <p class="m-[8px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque aliquid vitae dolorum fuga, ipsa tempore, dicta consectetur quos omnis error impedit totam voluptatum in. Eligendi ipsa ipsum rem nobis!</p>
-    </article>
-    <article class="w-full bg-[#ffffff12] rounded-[6px]">
-      <header>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faiosciv.com%2Fwp-content%2Fuploads%2F2020%2F09%2F4197036_v2-01.jpg&f=1&nofb=1&ipt=54f1c5d25caceaa60df92644d548b052eecc3152b3d53dfe4adf7f43739f29dc&ipo=images" alt="fundamentos de programación" class="rounded-tl-[12px] rounded-tr-[12px]">
-      </header>
-      <h3 class="m-[8px] font-bold">Fundamentos de programación</h3>
-      <p class="m-[8px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque aliquid vitae dolorum fuga, ipsa tempore, dicta consectetur quos omnis error impedit totam voluptatum in. Eligendi ipsa ipsum rem nobis!</p>
-    </article>
-    <article class="w-full bg-[#ffffff12] rounded-[6px]">
-      <header>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faiosciv.com%2Fwp-content%2Fuploads%2F2020%2F09%2F4197036_v2-01.jpg&f=1&nofb=1&ipt=54f1c5d25caceaa60df92644d548b052eecc3152b3d53dfe4adf7f43739f29dc&ipo=images" alt="fundamentos de programación" class="rounded-tl-[12px] rounded-tr-[12px]">
-      </header>
-      <h3 class="m-[8px] font-bold">Fundamentos de programación</h3>
-      <p class="m-[8px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque aliquid vitae dolorum fuga, ipsa tempore, dicta consectetur quos omnis error impedit totam voluptatum in. Eligendi ipsa ipsum rem nobis!</p>
-    </article>
+<section class="w-full h-auto flex flex-col justify-center items-center sm:pb-24">
+  <h2 class="text-2xl mx-6 mt-8 text-dark-text text-center">Algunos de nuestros cursos</h2>
+  <div class="flex flex-col flex-wrap p-[22px] mx-auto text-dark-text gap-8 sm:flex-row sm:justify-center sm:items-center">
+    <?php include('./php/lstCursos.php') ?>
   </div>
 </section>
 
@@ -69,5 +47,6 @@
       <p class="font-semibold">codeLearn</p>
     </a>
     <p class="text-[10px]">@ 2024 codeLearn | Todos los derechos reservados</p>
+    <p>Echo con el 💓 por Emmanuel Montoya</p>
   </div>
 </footer>

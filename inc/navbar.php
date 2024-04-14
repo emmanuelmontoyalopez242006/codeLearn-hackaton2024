@@ -1,4 +1,4 @@
-<nav class="w-full h-auto bg-dark-primary flex justify-between items-center py-3">
+<nav class="w-full h-auto bg-dark-primary flex justify-between items-center py-3 sticky top-0">
   <ul class="mx-2">
     <a href="index.php?vista=index" class="inline-flex justify-center items-center text-dark-text">
       <img src="./img/logo.svg" alt="Logo de codeLearn" class="w-[42px]">
